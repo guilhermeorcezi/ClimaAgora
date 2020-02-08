@@ -21,5 +21,11 @@ const List = styled.ul`
 		border: 1px solid #114b70;
 		margin: 5px 0;
 	}
+
+	@media (max-width: 1024px) {
+		li {
+		margin: 30px 20px;
+		}
+	}
 `;
 export default List;

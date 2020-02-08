@@ -1,5 +1,6 @@
-import React, { useState, createContext} from 'react';
+import React, { useState, createContext } from 'react';
 import axios from 'axios';
+import handleError from '../utils/handleError';
 
 export const WeatherContext = createContext();
 
@@ -19,7 +20,7 @@ const WeatherContextProvider = (props) => {
 
 			await setCityWeather({ name, temp, feels_like, humidity });
 		} catch (er) {
-			console.log(er);
+			handleError();
 		}
 	}
 

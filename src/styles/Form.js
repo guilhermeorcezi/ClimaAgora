@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Form = styled.form`
-    margin-bottom:50px;
+	margin-bottom: 50px;
 
 	input {
 		margin-right: 10px;
@@ -20,12 +20,16 @@ const Form = styled.form`
 		cursor: pointer;
 		background-color: rgba(0, 97, 249, 1);
 		color: #fff;
-    }
-    
-    button:hover{
-        background-color:rgb(5, 131, 221);
-        transition: 1s ease-in;
-    }
+	}
+
+	button:hover {
+		background-color: rgb(5, 131, 221);
+		transition: 1s ease-in;
+	}
+
+	@media (max-width: 1024px) {
+		margin: 30px auto;
+	}
 `;
 
 export default Form;

@@ -5,10 +5,12 @@ import Content from '../styles/Content';
 import WeatherContextProvider from './WeatherContext';
 import WeatherForm from './WeatherForm';
 import WeatherList from './WeatherList';
+import { ToastContainer } from 'react-toastify';
 
 export default function components() {
 	return (
 		<WeatherContextProvider>
+			<ToastContainer />
 			<Container>
 				<Aside>
 					<strong>Clima Agora</strong>

@@ -9,6 +9,12 @@ const Content = styled.div`
 	-moz-box-shadow: 0px 6px 5px -3px rgba(92, 92, 92, 1);
 	box-shadow: 0px 6px 5px -3px rgba(92, 92, 92, 1);
 	padding: 50px 100px;
+
+	@media (max-width: 1024px) {
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 `;
 
 export default Content;
