@@ -1,14 +1,14 @@
 import React from 'react';
-
 import Container from '../styles/Container';
 import Aside from '../styles/Aside';
 import Content from '../styles/Content';
-import Form from '../styles/Form';
-import List from '../styles/List';
+import WeatherContextProvider from './WeatherContext';
+import WeatherForm from './WeatherForm';
+import WeatherList from './WeatherList';
 
 export default function components() {
 	return (
-		<>
+		<WeatherContextProvider>
 			<Container>
 				<Aside>
 					<strong>Clima Agora</strong>
@@ -18,26 +18,10 @@ export default function components() {
 					</p>
 				</Aside>
 				<Content>
-					<Form>
-						<input type="text" placeholder="Digitar cidade" />
-						<button>Verificar</button>
-					</Form>
-					<List>
-						<li>
-							<strong>Localização</strong>
-							<p>São Paulo</p>
-						</li>
-						<li>
-							<strong>Temperatura</strong>
-							<p>27°C</p>
-						</li>
-						<li>
-							<strong>Umidade</strong>
-							<p>96%</p>
-						</li>
-					</List>
+					<WeatherForm></WeatherForm>
+					<WeatherList></WeatherList>
 				</Content>
 			</Container>
-		</>
+		</WeatherContextProvider>
 	);
 }

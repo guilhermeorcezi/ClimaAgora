@@ -3,9 +3,8 @@ import styled from 'styled-components';
 const List = styled.ul`
 	li {
 		flex-direction: column;
-        margin-bottom: 100px;
-        padding-bottom:20px;
-        border-bottom: 1px solid #114b70;
+		margin-bottom: 30px;
+		padding-bottom: 20px;
 	}
 
 	strong {
@@ -14,8 +13,13 @@ const List = styled.ul`
 	}
 
 	p {
-        font-size: 16px;
-        color:#666;
+		font-size: 18px;
+		color: #666;
+	}
+
+	hr {
+		border: 1px solid #114b70;
+		margin: 5px 0;
 	}
 `;
 export default List;
