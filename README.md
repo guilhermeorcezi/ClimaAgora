@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="./github_files/climaagora.png" alt="To Do List" width="700">
 <br>
-To Do List
+Clima Agora
 </h1>
 
 <p align="center"> 🚀 A web application to search the climate conditions of any Brazil's city
